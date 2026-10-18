@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lisa wedstrijdagenda</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="attendees.js" defer></script>
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <h1>Lisa wedstrijdagenda</h1>
+    <form id="settings">
+      <label for="profile">Profiel</label>
+      <select id="profile" name="profile" disabled aria-describedby="profile-help"></select>
+      <div class="profile-actions">
+        <button id="add-profile" type="button" disabled>Nieuw profiel</button>
+        <button id="delete-profile" type="button" disabled>Verwijderen</button>
+      </div>
+      <p id="profile-help">Maak een profiel per speler. Alleen diens wedstrijden worden getoond en geëxporteerd.</p>
+      <label for="profile-name">Naam speler (profiel)</label>
+      <input id="profile-name" name="profileName" required autocomplete="off" placeholder="Bijvoorbeeld Noor" disabled>
+      <label for="agenda-name">Naam in agenda</label>
+      <input id="agenda-name" name="agendaName" required autocomplete="off" placeholder="Bijvoorbeeld Sake" aria-describedby="name-help" disabled>
+      <p id="name-help">Deze naam komt voor iedere wedstrijdtitel. De profielnaam moet overeenkomen met de spelernaam op de Lisa-wedstrijdkaart.</p>
+      <label class="checkbox-label" for="private-event">
+        <input id="private-event" name="privateEvent" type="checkbox" aria-describedby="private-help" disabled>
+        Agenda-items als privé markeren (Outlook)
+      </label>
+      <p id="private-help">Nieuwe downloads krijgen de markering Privé. Bestaande afspraken veranderen niet. Controleer de markering na import in Outlook.</p>
+      <label for="attendee-emails">Genodigden (optioneel)</label>
+      <textarea id="attendee-emails" name="attendeeEmails" rows="3" placeholder="ouder@example.nl" aria-describedby="attendee-help" disabled></textarea>
+      <p id="attendee-help">Een e-mailadres per regel, of gescheiden door komma's of puntkomma's. Geldt voor dit profiel. De extensie verstuurt niets: controleer de deelnemers na openen in Outlook en verstuur daar zelf de uitnodiging.</p>
+      <div class="save-bar">
+        <button id="save" type="submit" disabled>Opslaan</button>
+      </div>
+    </form>
+    <p id="status" role="status" aria-live="polite"></p>
+    <p>Download daarna op mijn.lisahockey.nl een wedstrijd. Open het .ics-bestand in je agenda. Latere wijzigingen worden niet automatisch bijgewerkt.</p>
+  </body>
+</html>

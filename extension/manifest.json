@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "minimum_chrome_version": "111",
+  "name": "Lisa wedstrijdagenda",
+  "version": "1.0.0",
+  "description": "Download Lisa-hockeywedstrijden als agenda-item vanaf de verzameltijd.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Lisa wedstrijdagenda instellen",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mijn.lisahockey.nl/*"],
+      "js": ["bridge.js"],
+      "world": "MAIN",
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://mijn.lisahockey.nl/*"],
+      "js": [
+        "attendees.js", "calendar.js", "lisa.js", "bulk.js",
+        "selection.js", "panel-styles.js", "panel.js", "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

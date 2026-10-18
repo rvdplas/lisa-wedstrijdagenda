@@ -1,0 +1,13 @@
+{
+  "name": "lisa-match-extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node --check extension/attendees.js && node --check extension/calendar.js && node --check extension/lisa.js && node --check extension/bulk.js && node --check extension/selection.js && node --check extension/panel-styles.js && node --check extension/panel.js && node --check extension/bridge.js && node --check extension/content.js && node --check extension/popup.js"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}
