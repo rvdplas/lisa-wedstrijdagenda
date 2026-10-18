@@ -69,6 +69,6 @@ die repository.
 
 ## Contact
 
-Na publicatie kun je via GitHub Issues in de projectrepository vragen over dit
-beleid stellen. Plaats geen persoonsgegevens of e-mailadressen in een openbaar
+Je kunt via GitHub Issues in de projectrepository vragen over dit beleid
+stellen; zie ook [SUPPORT.md](./SUPPORT.md). Plaats geen persoonsgegevens of e-mailadressen in een openbaar
 issue.

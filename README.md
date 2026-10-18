@@ -8,7 +8,7 @@ de wedstrijdtitel worden opgenomen; kaarten zonder spelernaam nooit.
 Werkt voor wedstrijden en oefenwedstrijden die Lisa
 als wedstrijdkaart toont, niet voor trainingen, diensten of andere afspraken.
 
-[Privacybeleid](./PRIVACY.md)
+[Privacybeleid](./PRIVACY.md) · [Support](./SUPPORT.md)
 
 ## Installeren
 
